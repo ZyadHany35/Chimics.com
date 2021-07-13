@@ -1,7 +1,7 @@
 let carbonCount = window.prompt("Write Carbon Count !");
 let hydrogine = carbonCount * 2 + 2;
 let carbonFigure = "";
-
+let button = document.querySelector("button");
 for (let i = 0; i < carbonCount; i++) {
   if (i == 0) {
     carbonFigure += "CH" + 3;
@@ -21,3 +21,7 @@ for (let i = 0; i < carbonCount; i++) {
   }
 }
 document.write("<h1>" + carbonFigure + "</h1>")
+
+button.onclick = function () {
+  location.reload()
+}
