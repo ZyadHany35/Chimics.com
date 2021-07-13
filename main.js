@@ -20,4 +20,4 @@ for (let i = 0; i < carbonCount; i++) {
     carbonFigure = "Don't Know Yet"
   }
 }
-document.write(carbonFigure)
+document.write(`<h1>${carbonFigure}</h1>`)
