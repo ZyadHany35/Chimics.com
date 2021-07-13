@@ -4,20 +4,20 @@ let carbonFigure = "";
 let button = document.querySelector("button");
 for (let i = 0; i < carbonCount; i++) {
   if (i == 0) {
-    carbonFigure += "CH" + 3;
+    carbonFigure += "CH" + "<sub>3</sub>";
   } else if (i == carbonCount - 1) {
-    carbonFigure += "-CH" + 3;
+    carbonFigure += "-CH" + "<sub>3</sub>";
   } else {
-    carbonFigure += "-CH" + 2;
+    carbonFigure += "-CH" + "<sub>2</sub>";
   }
   if (carbonCount == 1) {
-    carbonFigure = "CH4"
+    carbonFigure = "CH" + "<sub>4</sub>";
   }
   if (carbonCount == 2) {
-    carbonFigure = "CH3-CH3"
+    carbonFigure = "CH" + "<sub>3</sub>" + "CH" + "<sub>3</sub>";
   }
   if (carbonCount > 10) {
-    carbonFigure = "Don't Know Yet"
+    carbonFigure = "Don't Know Yet";
   }
 }
 document.write("<h1>" + carbonFigure + "</h1>")
